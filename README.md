@@ -1,5 +1,5 @@
 <a href="https://www.webseeker.io">
-  <img alt="Web Seeker" src="./public/og-image.png">
+  ![alt text](image-1.png)
   <h1 align="center">WebSeeker</h1>
 </a>
 
