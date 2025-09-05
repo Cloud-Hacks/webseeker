@@ -7,15 +7,14 @@
   An open source AI search engine. Powered by Together.ai.
 </p>
 
-> If you want to learn how to build this, check out [**the tutorial**](https://docs.together.ai/docs/ai-search-engine)!
+![alt text](image.png)
 
 ## Tech stack
 
 - Next.js app router with Tailwind
-- Together AI for LLM inference
-- OpenAI gpt-oss models and Llama 3.1 8B for the LLMs
+- Gemini AI for LLM inference
+- OpenAI gpt-oss models and Gemini Flask-2.5 for the LLMs
 - Exa.ai for the search API
-- Helicone for observability
 - Plausible for website analytics
 
 ## How it works
@@ -30,7 +29,6 @@
 
 1. Fork or clone the repo
 2. Create an account at [Together AI](https://togetherai.link) for the LLM
-3. Create an account at [SERP API](https://serper.dev/) or with Azure ([Bing Search API](https://www.microsoft.com/en-us/bing/apis/bing-web-search-api))
 4. Create an account at [Helicone](https://www.helicone.ai/) for observability
 5. Create a `.env` (use the `.example.env` for reference) and replace the API keys
 6. Run `npm install` and `npm run dev` to install dependencies and run locally
