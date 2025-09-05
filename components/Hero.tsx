@@ -70,7 +70,7 @@ const Hero: FC<THeroProps> = ({
         Fully open source!{" "}
         <span className="text-sm font-medium underline">
           <a
-            href="https://github.com/afzal442/webseeker"
+            href="https://github.com/cloud-hacks/webseeker"
             target="_blank"
             rel="noopener noreferrer"
           >
