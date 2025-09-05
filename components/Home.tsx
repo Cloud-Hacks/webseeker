@@ -117,7 +117,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Login />
+      {/* <Login /> */}
       <main className="h-full px-4 pb-4">
         {!showResult && (
           <Hero

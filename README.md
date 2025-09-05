@@ -4,7 +4,7 @@
 </a>
 
 <p align="center">
-  An open source AI search engine. Powered by Together.ai.
+  An open source AI search engine. Powered by Gemini AI and Secured by Vonage API.
 </p>
 
 ![alt text](image.png)

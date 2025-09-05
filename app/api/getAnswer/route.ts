@@ -2,7 +2,6 @@ import { auth } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 import { streamText } from 'ai';
 import { SearchResults } from "@/utils/sharedTypes";
-// 1. Import your configured Gemini model client instead of the Together AI client
 import { geminiModel } from '@/utils/clients';
 
 export const maxDuration = 45;
@@ -23,7 +22,6 @@ export async function POST(request: Request) {
 
     const finalResults: SearchResults[] = sources;
 
-    // The prompt is well-structured and will work effectively with Gemini
     const mainAnswerPrompt = `
     Given a user question and some context, please write a clean, concise and accurate answer to the question based on the context. You will be given a set of related contexts to the question, each starting with a reference number like [[citation:x]], where x is a number. Please use the context when crafting your answer.
 
@@ -44,7 +42,6 @@ export async function POST(request: Request) {
     Never output References or citations!
     `;
 
-    // 2. Update the streamText call to use the Gemini model
     const result = await streamText({
       model: geminiModel, // Swapped to the Gemini model instance
       system: mainAnswerPrompt,
@@ -54,7 +51,6 @@ export async function POST(request: Request) {
           content: question,
         },
       ],
-      // 3. Removed the custom 'headers' object as it was specific to the previous setup
     });
 
     return result.toTextStreamResponse();
